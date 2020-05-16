@@ -1,6 +1,6 @@
 # Project Title
 
-AngularJS Routing APP
+AngularJS State APP
 
 ## Description
 
