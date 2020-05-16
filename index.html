@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="stateApp">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS State APP</title>
+
+    <!-- WEBAPP STYLES -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+
+</head>
+
+<body>
+
+    <!-- WEBAPP NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" ng-controller="NavController">
+        <a class="navbar-brand" href="#">{{title}}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="home">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="countries">Countries <span class="sr-only"></span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div ui-view></div>
+
+    <!-- WEBAPP SCRIPTS -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- //ANGULAR -->
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <!-- //ANGULAR.UI-ROUTER -->
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <!-- //ANGULAR.APP -->
+    <script src="/js/app.js"></script>
+    <!-- //APP.CONFIG -->
+    <script src="/js/app.config.js"></script>
+    <!-- //APP.CONTROLLERS -->
+    <script src="/js/controllers/nav.controller.js"></script>
+    <script src="/js/controllers/home.controller.js"></script>
+    <script src="/js/controllers/countries.controller.js"></script>
+    <script src="/js/controllers/country.controller.js"></script>
+    <!-- //APP.SERVICES -->
+    <script src="/js/services/countries.service.js"></script>
+
+</body>
+
+</html>

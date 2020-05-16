@@ -1,0 +1,1 @@
+var stateApp = angular.module("stateApp", ['ui.router']);

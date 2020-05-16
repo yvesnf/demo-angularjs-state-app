@@ -1,0 +1,33 @@
+<div class="container-fluid uniform-top-margin">
+
+    <div class="jumbotron">
+        <p class="lead">This is the <strong>country controller</strong> and it uses the countries service too</p>
+        <hr class="my-4">
+        <p>On this page you can see the country as you want</p>
+        <a class="btn btn-primary btn-lg" ui-sref="countries" role="button">Go back!</a>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+
+        <div class="card mb-3">
+            <img src="{{country.flag}}" class="card-img-top max-for-flag" alt="">
+            <div class="card-body">
+                <h2 class="card-title">{{country.name}}</h2>
+                <h5>Population</h5>
+                <p>{{country.population}}</p>
+
+                <h5>Capital</h5>
+                <p>{{country.capital}}</p>
+                <ul class="list-group">
+                    <li class="list-group-item active">Languages</li>
+                    <li ng-repeat="item in country.languages track by $index" class="list-group-item">{{item.name}}</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>

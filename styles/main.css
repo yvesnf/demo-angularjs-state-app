@@ -1,0 +1,16 @@
+  .uniform-top-margin {
+      margin-top: 10px;
+  }
+  
+  .uniform-margin-cards {
+      margin: 15px;
+  }
+  
+  .max-for-flag {
+      max-width: 800px !important;
+      max-height: auto !important;
+  }
+  
+  .text-align-center {
+      text-align: center;
+  }

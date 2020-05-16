@@ -1,0 +1,12 @@
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .for-phone-port {
+        justify-items: center;
+        text-align: center;
+        justify-content: center !important;
+    }
+    .uniform-margin-cards {
+        margin: 15px;
+    }
+}

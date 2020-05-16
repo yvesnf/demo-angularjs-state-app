@@ -1,0 +1,28 @@
+<div class="container-fluid uniform-top-margin">
+
+    <div class="jumbotron">
+        <p class="lead">This is the <strong>countries controller</strong> and it uses the countries service</p>
+        <hr class="my-4">
+        <p>On this page you can list all the countries in the world</p>
+        <form class="form-inline my-2 my-lg-0">
+            <input ng-model="filter" class="form-control mr-sm-2" placeholder="Filter by name">
+        </form>
+    </div>
+
+    <div class="row d-flex justify-content-between for-phone-port">
+
+        <div ng-repeat="item in countries | filter: { name:filter }" class="card uniform-margin-cards" style="width: 18rem;">
+
+            <img src="{{item.flag}}" class="card-img-top" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">Capital: {{item.capital}}</p>
+                <a ui-sref="country({id: item.alpha3Code})" class="btn btn-primary">Go country</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
